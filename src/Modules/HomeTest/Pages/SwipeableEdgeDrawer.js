@@ -9,6 +9,7 @@ import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
 import Typography from "@mui/material/Typography";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import ScrollComponent from "../../Components/ScrollComponent";
 
 const drawerBleeding = 56;
 
@@ -94,8 +95,19 @@ function SwipeableEdgeDrawer(props) {
             51 results
           </Typography>
         </StyledBox>
-        <StyledBox sx={{ px: 2, pb: 2, height: "100%", overflow: "auto" }}>
-          <Skeleton variant="rectangular" height="100%" />
+        <StyledBox
+          sx={{
+            // p: 1,
+            height: "100%",
+            // overflow: "auto",
+            border: "1px solid red",
+            // overflowX: "scroll",
+            width: "100%",
+            // overflowY: "hidden",
+          }}
+        >
+          {/* <Skeleton variant="rectangular" height="100%" /> */}
+          <ScrollComponent />
         </StyledBox>
       </SwipeableDrawer>
     </Root>
