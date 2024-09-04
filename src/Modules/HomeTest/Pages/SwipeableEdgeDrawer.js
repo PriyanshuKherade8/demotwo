@@ -10,6 +10,7 @@ import Skeleton from "@mui/material/Skeleton";
 import Typography from "@mui/material/Typography";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import ScrollComponent from "../../Components/ScrollComponent";
+import InfiniteScroll from "../../Components/InfiniteScroll";
 
 const drawerBleeding = 56;
 
@@ -107,7 +108,8 @@ function SwipeableEdgeDrawer(props) {
           }}
         >
           {/* <Skeleton variant="rectangular" height="100%" /> */}
-          <ScrollComponent />
+          {/* <ScrollComponent /> */}
+          <InfiniteScroll />
         </StyledBox>
       </SwipeableDrawer>
     </Root>
